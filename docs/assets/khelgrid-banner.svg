@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" role="img" aria-label="KHELGRID - Every ground. Every opportunity.">
+  <title>KHELGRID - Every ground. Every opportunity.</title>
+  <rect width="1280" height="400" fill="#14213D"/>
+  <g stroke="#F6F1E6" stroke-opacity=".07" stroke-width="2">
+    <path d="M760 0V400M860 0V400M960 0V400M1060 0V400M1160 0V400M700 100H1280M700 200H1280M700 300H1280"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M560 430C780 420 860 300 930 200S1080 40 1300 30" stroke="#B8492F" stroke-width="12"/>
+    <path d="M600 460C820 450 910 330 980 230S1120 80 1310 70" stroke="#E39B2D" stroke-width="6"/>
+    <path d="M640 490C860 480 960 360 1030 260S1160 120 1320 110" stroke="#F6F1E6" stroke-opacity=".45" stroke-width="3"/>
+  </g>
+  <circle cx="960" cy="200" r="11" fill="#E39B2D" stroke="#14213D" stroke-width="4"/>
+  <g transform="translate(72 108) scale(.62)">
+    <rect width="120" height="120" rx="22" fill="#F6F1E6" fill-opacity=".08"/>
+    <g stroke="#F6F1E6" stroke-opacity=".35" stroke-width="2"><path d="M30 30H90M30 60H90M30 90H90M30 30V90M60 30V90M90 30V90"/></g>
+    <path d="M18 98C38 98 50 86 56 66S78 30 102 26" stroke="#B8492F" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M18 108C44 108 60 94 66 74S86 42 106 38" stroke="#E39B2D" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="60" cy="60" r="7" fill="#E39B2D"/>
+  </g>
+  <text x="168" y="168" font-family="Bahnschrift, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="700" font-size="60" letter-spacing="5" fill="#F6F1E6">KHELGRID</text>
+  <text x="72" y="250" font-family="Bahnschrift, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="700" font-size="44" fill="#F6F1E6">Every ground. <tspan fill="#E39B2D">Every opportunity.</tspan></text>
+  <text x="72" y="306" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#B9C0CF">AI planning for more safe, fair sporting opportunity · Lucknow district pilot</text>
+</svg>

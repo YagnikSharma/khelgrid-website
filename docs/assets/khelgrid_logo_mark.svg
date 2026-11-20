@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="KHELGRID mark: running-track lanes curving through a connected district grid">
+  <title>KHELGRID</title>
+  <rect width="120" height="120" rx="22" fill="#14213D"/>
+  <g stroke="#F6F1E6" stroke-opacity=".28" stroke-width="2">
+    <path d="M30 30H90M30 60H90M30 90H90M30 30V90M60 30V90M90 30V90"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M18 98C38 98 50 86 56 66S78 30 102 26" stroke="#B8492F" stroke-width="7"/>
+    <path d="M18 108C44 108 60 94 66 74S86 42 106 38" stroke="#E39B2D" stroke-width="4"/>
+  </g>
+  <g fill="#F6F1E6">
+    <circle cx="30" cy="30" r="4"/><circle cx="90" cy="30" r="4"/><circle cx="30" cy="60" r="4"/>
+    <circle cx="90" cy="60" r="4"/><circle cx="30" cy="90" r="4"/><circle cx="60" cy="90" r="4"/><circle cx="90" cy="90" r="4"/><circle cx="60" cy="30" r="4"/>
+  </g>
+  <circle cx="60" cy="60" r="7" fill="#E39B2D" stroke="#14213D" stroke-width="3"/>
+</svg>
