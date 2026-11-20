@@ -2,44 +2,38 @@
   <img src="docs/assets/khelgrid-banner.svg" alt="KHELGRID: Every ground. Every opportunity." width="100%">
 </p>
 
-# KHELGRID: landing website
+# KHELGRID
 
-**KHELGRID** helps a District Sports Officer get more safe, fair sporting opportunity out of the grounds, coaches and budgets a district already has. It combines constraint optimisation (Google OR-Tools CP-SAT), clear data provenance and human approval.
+KHELGRID is a planning tool for district sports officers. It looks at the grounds, coaches and timeslots a district already has and works out a weekly coaching schedule that reaches more players, especially in areas that get left out today.
 
-This repository is the public **Experience** website: the story of the project, moving from India to Uttar Pradesh to Lucknow district, with links into the product.
+We are starting with Lucknow district. This repo holds our public website. The live link will go here once it is deployed.
 
-> **Status: idea stage (November 2026).** The website and product are being built for the 24-hour AI Kaushal Hackathon (8–9 December 2026).
-> **Live demo: coming soon.** The deployment link will appear here once it is live.
+**Status:** idea stage, built for the AI Kaushal Hackathon 2026 (use case: AI Playground and Sports Facility Optimizer).
 
-## What KHELGRID is
+## How it works
 
-| Experience | What it does |
-|---|---|
-| **Experience** (this repo) | Cinematic, accessible story site with two clear calls to action: *Explore Command* and *Explore Sports Hub* |
-| **Command** | The district officer's planning tool: map, KPIs, scenario editor, optimised plan vs baseline, explanations, review and export |
-| **Sports Hub** | Public facility discovery and verified resources, with links to official portals |
+The officer enters what they have: facilities, which coaches are free and when, what each coach is qualified for, and how much demand there is in each area. KHELGRID uses Google OR-Tools (CP-SAT) to find the best schedule that follows the rules. A coach can't be in two places at once, can't teach a sport they aren't qualified for, and a venue that is closed for safety never gets a session.
 
-### How the engine works
-1. **Learn constraints:** facilities, coach qualifications and availability, timeslots, demand, budget. Every value carries its source and date.
-2. **Optimise:** CP-SAT finds a weekly coaching plan under hard rules: no double-booking, qualified coaches only, travel and rest gaps, budget limits, and **closed or unsafe venues are never used**.
-3. **Review:** the officer sees the plan compared with a baseline, with plain reasons, then approves, edits or rejects it. Every decision is logged.
+The officer then sees the new plan next to the current one and decides whether to approve it.
 
-## Planned stack (website)
-Next.js + TypeScript, React Three Fiber (lazy-loaded, with a static fallback), Motion, Tailwind / shadcn/ui, English and Hindi, aiming for WCAG 2.2 AA, respecting `prefers-reduced-motion`.
+In a test week with made-up data, the solver planned 2,082 player-slots against 1,482 from a simple nearest-coach schedule, and raised coverage in the rural area from 36% to 100%.
 
-## Honest notes
-- **Independent prototype.** This is not an official government website or service. No government integration or endorsement is claimed.
-- Any operational numbers shown in demos come from **synthetic (invented) data** and are clearly labelled. They are modelled, not measured, impact.
-- Our original mascot, **Captain Khel Singh / कप्तान खेल सिंह**, is a fictional character.
+## What we are building
 
-## Team: Task Force 141 · DYS HEALTHTECH PRIVATE LIMITED
+- **Command**: the officer's map, scenario settings and plan comparison
+- **Sports Hub**: a public page to find facilities by sport and area, with links to official portals like Khelo India and Khel Saathi
+- **This website**: the story of the project, in English and Hindi
 
-| Name | Role |
-|---|---|
-| Devanshu Sharma | Chief Technology Officer (CTO) |
-| Yagnik Sharma | Chief Executive Officer (CEO) · Team lead |
-| Sameeksha | Chief Operating Officer (COO) |
+## Team
 
----
-Built for the **AI Kaushal Hackathon 2026**, use case *AI Playground and Sports Facility Optimizer* (Department of Youth Affairs & Sports).
-License: all rights reserved until the team chooses a licence.
+**Task Force 141**, DYS HEALTHTECH PRIVATE LIMITED
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/assets/team/devanshu.jpg" width="150" alt="Devanshu Sharma"><br><b>Devanshu Sharma</b><br>CTO</td>
+    <td align="center"><img src="docs/assets/team/yagnik.jpg" width="150" alt="Yagnik Sharma"><br><b>Yagnik Sharma</b><br>CEO, team lead</td>
+    <td align="center"><img src="docs/assets/team/sameeksha.jpg" width="150" alt="Sameeksha"><br><b>Sameeksha</b><br>COO</td>
+  </tr>
+</table>
+
+KHELGRID is an independent project and is not affiliated with any government body.
